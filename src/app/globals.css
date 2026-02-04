@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'JingHuaOldSong';
-  src: url('/jinhualaosong.ttf') format('truetype');
+  src: url('/jinhualaosong.woff2') format('woff2'),
+    url('/jinhualaosong.subset.ttf') format('truetype');
   font-display: swap;
 }
 

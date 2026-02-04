@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Test</title>
+    <style>
+        @font-face {
+            font-family: 'JingHuaOldSong';
+            src: url('/jinhualaosong.ttf') format('truetype');
+            font-display: swap;
+        }
+
+        body {
+            padding: 50px;
+            background: #000;
+            color: #fff;
+        }
+
+        .test {
+            font-family: 'JingHuaOldSong', serif;
+            font-size: 32px;
+            writing-mode: vertical-rl;
+            background: #f4ecd8;
+            color: #2c2c2c;
+            padding: 40px;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .info {
+            margin: 20px;
+            font-family: Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="info">
+        <h1>Font Loading Test</h1>
+        <p>If you see traditional Chinese serif font below, JingHuaOldSong is working:</p>
+    </div>
+
+    <div class="test">
+        夫阅读者，心灵之远行也。有书，载道之具，极致之选。
+    </div>
+
+    <div class="info">
+        <p>Open DevTools (F12) → Network tab → Filter by "font" to see if jinhualaosong.ttf loads</p>
+        <p>Also check Console for any font loading errors</p>
+    </div>
+</body>
+
+</html>
